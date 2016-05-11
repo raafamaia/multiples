@@ -34,6 +34,9 @@
                                     <constraint firstAttribute="height" constant="169" id="rge-gJ-HDM"/>
                                 </constraints>
                                 <state key="normal" image="play"/>
+                                <connections>
+                                    <action selector="btnPlayPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EuO-fi-7WJ"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter a number" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Qhj-t0-5s7" userLabel="numberTxt">
                                 <rect key="frame" x="198" y="341" width="205" height="30"/>
@@ -61,6 +64,9 @@
                                     <constraint firstAttribute="height" constant="75" id="wBG-Yh-naH"/>
                                 </constraints>
                                 <state key="normal" image="add"/>
+                                <connections>
+                                    <action selector="btnAddPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Lem-23-Oab"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -81,6 +87,13 @@
                             <constraint firstItem="I5g-yF-DCN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="z7c-tC-v6g"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="btnAdd" destination="Hc4-hm-qdd" id="bme-Jf-Pyk"/>
+                        <outlet property="btnPlay" destination="yDT-fx-92w" id="7iG-Qp-o59"/>
+                        <outlet property="imgLogo" destination="I5g-yF-DCN" id="vBS-FB-Nbj"/>
+                        <outlet property="lblResult" destination="H33-JX-gg5" id="HEl-o0-7UZ"/>
+                        <outlet property="txtNumber" destination="Qhj-t0-5s7" id="4Zf-HE-mYF"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
