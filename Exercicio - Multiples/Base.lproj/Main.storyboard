@@ -27,7 +27,7 @@
                                     <constraint firstAttribute="height" constant="66" id="ygb-AT-ukh"/>
                                 </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yDT-fx-92w">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yDT-fx-92w" userLabel="playButton">
                                 <rect key="frame" x="198" y="411" width="205" height="169"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="205" id="HFK-8d-DIL"/>
@@ -35,9 +35,20 @@
                                 </constraints>
                                 <state key="normal" image="play"/>
                             </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter a number" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Qhj-t0-5s7" userLabel="numberTxt">
+                                <rect key="frame" x="198" y="339" width="205" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="aB9-79-Hn8"/>
+                                    <constraint firstAttribute="width" constant="205" id="sBH-rj-GiB"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="yDT-fx-92w" firstAttribute="top" secondItem="Qhj-t0-5s7" secondAttribute="bottom" constant="41" id="7rM-X4-bmU"/>
+                            <constraint firstItem="yDT-fx-92w" firstAttribute="leading" secondItem="Qhj-t0-5s7" secondAttribute="leading" id="C71-ki-QYP"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="6Xz-cU-Bpl" secondAttribute="bottom" id="DxZ-fO-6Od"/>
                             <constraint firstItem="6Xz-cU-Bpl" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="MI8-US-o0t"/>
                             <constraint firstAttribute="trailing" secondItem="6Xz-cU-Bpl" secondAttribute="trailing" id="a1J-UY-hl3"/>
